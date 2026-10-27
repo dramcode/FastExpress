@@ -1,0 +1,18 @@
+[project]
+name = "fastexpress-backend"
+version = "1.0.0"
+requires-python = ">=3.11"
+description = "FastExpress shipping quote API"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q --cov=app --cov-branch --cov-report=term-missing --cov-report=json:coverage.json"
+
+[tool.coverage.run]
+branch = true
+source = ["app"]
+
+[tool.coverage.report]
+fail_under = 85
+show_missing = true
+exclude_lines = ["pragma: no cover"]

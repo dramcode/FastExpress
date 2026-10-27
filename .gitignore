@@ -1,0 +1,16 @@
+backend/.venv/
+**/__pycache__/
+**/.pytest_cache/
+**/*.pyc
+backend/.coverage
+backend/coverage.json
+backend/htmlcov/
+
+frontend/node_modules/
+frontend/dist/
+
+Thumbs.db
+Desktop.ini
+_brief_extract.txt
+docs/evidence/pdf-preview/
+odd/
